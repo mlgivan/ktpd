@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Регистрация</title>
+		<meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html">
+        <meta name="author" content="Чирков Даниил">
+        <meta name="description" content="Форма регистрации">
+        <meta name="keywords" content="регистрация, форма регистрации">
+        <link rel="shortcut icon" href="images/dxfg.png">  
+	</head>
+	<body>
+		<h1>Регистрация</h1>
+		<form>
+			<fieldset>
+				<legend>Форма регистрации</legend>
+				<label for="name">Введите имя:
+                <input type="text" placeholder="Имя" name="name" required tabindex="1">
+                </label><br><br>
+				
+				<label for="surname">Введите фамилию:
+                <input type="text" placeholder="Фамилия" name="surname" required tabindex="2">
+                </label><br><br>
+				
+				<label for="father's name">Введите отчество:
+                <input type="text" placeholder="Отчество" name="father's_name" required tabindex="3">
+                </label><br><br>
+				
+				<label for="names">Пол :</label>
+                <input type="text" name="names" list="names" required placeholder="Пол">
+                <datalist id="names">
+                <option value="Мужской"></option>
+                <option value="Женский"></option>
+                </datalist>
+				
+				<label for="date">Выберите дату:</label>
+                <input type="date" name="date" required tabindex="4"><br><br>
+				
+				<label for="choose_city">Выберите ваш город:</label><br>
+				<input name="City" required list="Города" tabindex="7" placeholder="Город">
+                <datalist id="Города">
+                <option value="Москва"></option>
+                <option value="Санкт-Петербург"></option>
+                <option value="Новосибирск"></option>
+                <option value="Екатеринбург"></option>
+                <option value="Нижний Новгород"></option>
+                <option value="Казань"></option>
+                <option value="Челябинск"></option>
+                <option value="Омск"></option>
+                </datalist>
+				<br><br>
+				
+				<label for="colors"> Любимый цвет : </label>
+                <input type="color" list="colors">
+                <datalist id="colors">
+                <option value="#ff0000" label="red"></option>
+                <option value="#0000ff" label="blue"></option>
+                <option value="#00ff00" label="green"></option>
+                </datalist><br>
+				
+				<label for="profile_picture">Фото вашего профиля:</label>
+                <input type="file" accept="image/jpg, image/png" name="profile_picture"><br><br>
+				
+				<label>Напишите кратко о себе:</label><br>
+				<textarea cols="100" rows="10" tabindex="6" name="short_story"></textarea><br><br>
+				
+				<label>Введите номер телефона:
+			    <input type="tel" placeholder="7-000-000-00-00"  pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required title="Разрешены только цифры в указанном формате: 7-000-000-00-00" maxlength="15">
+				</label><br><br>
+                
+				<label  for="email">Email:
+				<input type="email" placeholder="email@example.ru" required tabindex="8" name="email">
+				</label><br><br>
+				
+				<label>Введите пароль:
+				<input type="password" required tabindex="9" name="password">
+				</label><br><br>
+				
+				<label>Подтверждение пароля:
+				<input type="password" required tabindex="10" name="password_access">
+				</label><br><br>
+				
+				<button type="submit">Отправить форму</button>
+				<button type="reset">Очистить форму</button>
+				</fieldset>
+		</form>
+	</body>
+</html>
